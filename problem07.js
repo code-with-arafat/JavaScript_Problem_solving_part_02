@@ -1,3 +1,4 @@
+//Solve Problem 06 in alternative way
     const phones = [
         { model: "PhoneA", brand: "Iphone", price: 95000 },
         { model: "PhoneB", brand: "Samsung", price: 40000 },
@@ -8,15 +9,17 @@
     ];
 
     function findAveragePhonePrice(phones){
-        //using reduce
-        const total = phones.reduce((sum,phone)=>{
-            return sum + phone.price
-
-        },0)
+        let totalPhonePrice = 0;
+        //using for of loop 
+        for(const phone of phones){
+            totalPhonePrice = totalPhonePrice + phone.price
+        }
 
         const totalPhone = phones.length
-        const avgPhonePrice = total / totalPhone
+        const avgPhonePrice = totalPhonePrice / totalPhone
+
         return avgPhonePrice;
+
     }
 
-    console.log("Average Phone Price: "+ findAveragePhonePrice(phones));
+    console.log("Average of total phones price: " + findAveragePhonePrice(phones));
