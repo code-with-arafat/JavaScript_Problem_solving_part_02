@@ -21,11 +21,11 @@ Here is a quick breakdown of the problems solved in this repository:
    git clone [https://github.com/code-with-arafat/JavaScript_Problem_solving_part_02.git](https://github.com/code-with-arafat/JavaScript_Problem_solving_part_02.git)
 
 2. Navigate to the project folder: <br/>
-   Bash
+   Bash <br/>
    cd JavaScript_Problem_solving_part_02
    
 3. Run any problem file using Node.js: <br/>
-   Bash
+   Bash <br/>
    node problem02.js
 
 🚀 Key Topics Covered
