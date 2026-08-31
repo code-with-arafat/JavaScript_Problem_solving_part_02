@@ -1,3 +1,4 @@
+//Find Names of Adult Users
 const users = [
     { name: "Arafat", age: 23 },
     { name: "Rahim", age: 17 },
@@ -7,7 +8,6 @@ const users = [
 ];
 
 const adultUsers = [];
-
 for (const user of users) {
     if (user.age >= 18) {
         adultUsers.push(user.name);
